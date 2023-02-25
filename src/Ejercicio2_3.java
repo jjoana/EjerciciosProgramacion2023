@@ -6,12 +6,32 @@ public class Ejercicio2_3 {
         lista.add(1);
         lista.add(2);
         lista.add(3);
+
+        ListaNumeros listado = new ListaNumeros(lista);
+        System.out.println(listado.sumaListadoRecursivo(lista));
+
     }
 
-class ListaNumeros{
-    public int FactorialRecursivo(int n){
-        int valor =0;
-        if(!)
-        }   
+    class ListaNumeros {
+
+
+        private ArrayList<Integer> listado;
+    
+        public ListaNumeros(ArrayList<Integer> listado) {
+            this.listado = listado;
+    
+        }
+    
+        public int sumaListadoRecursivo(ArrayList<Integer> lista) {
+            
+            int valor=0;
+            if (!lista.isEmpty()) {
+                valor = lista.get(0);
+                lista.remove(0);
+                valor += sumaListadoRecursivo(lista);
+            }
+            return valor;
+        }
     }
+    
 }
