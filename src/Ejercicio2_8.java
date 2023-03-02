@@ -32,7 +32,6 @@ class calculoListaPares {
         }
         return listaPares;
     }
-
     public int SumaListaPares(ArrayList<Integer> milista) {
         int resultado = 0;
         listaPares.size();

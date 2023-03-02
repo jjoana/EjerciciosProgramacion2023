@@ -1,17 +1,25 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Ejercicio2_5_6 {
     public static void main (String[] args){
         ArrayList<Float> lista = new ArrayList<Float>();
         int tamano;
-        lista.add(3f);
-        lista.add(2f);
-        lista.add(6f);
+        Scanner sc = new Scanner(System.in);
+        float valor;
+
+        System.out.println("Añadimos el valor: ");
+        while(sc.hasNextFloat()){
+            valor = sc.nextFloat();
+            lista.add(valor);
+
+        }
+        sc.close();
         tamano=lista.size();
 
         Calculo objeto = new Calculo(lista);
         System.out.println(objeto.mediaAritmeticaRecursivo(tamano));
-        System.out.println(objeto.mediaAritmeticaIterativa(lista,tamano));
+        System.out.println(objeto.mediaAritmeticaIterativa(lista,tamano));1
     }
 }
 

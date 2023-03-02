@@ -6,7 +6,6 @@ public class Ejercicio2_2{
         System.out.println("El valor es: " + factorial.factorialRecursivo(10));
     }
 }
-
 class Factorial{
     public int factorialIterativo(int n){
         int valor = 1;

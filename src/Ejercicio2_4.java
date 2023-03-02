@@ -1,12 +1,21 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Ejercicio2_4 {
     public static void main(String[] args) {
         ArrayList<Integer> lista = new ArrayList<Integer>();
-        lista.add(1);
-        lista.add(2);
-        lista.add(3);
+        Scanner sc = new Scanner(System.in);
+        int valor;
+
+        System.out.println("Introduzca numero en la lista. Si quiere salir pulse cualquiewr caracter no numkerico y luego enter: ");
+        
+        while(sc.hasNextInt()){
+            System.out.println("Introduzca numero en la lista. Si quiere salir pulse cualquiewr caracter no numkerico y luego enter: ");
+            valor = sc.nextInt();
+            lista.add(valor);
+        }
+        sc.close();
 
         ListaNumeros objeto = new ListaNumeros();
 
@@ -15,7 +24,6 @@ public class Ejercicio2_4 {
 
         // hacer una copia de la lista original usando el constructor de ArrayList
         //ArrayList<Integer> listaCopia = new ArrayList<Integer>(lista);
-
 
         System.out.println(objeto.ListaNumerosRecursivo(lista));
         
