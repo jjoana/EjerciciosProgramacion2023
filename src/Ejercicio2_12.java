@@ -31,9 +31,4 @@ class Fibonacci {
             }
         }
     }
-
-    public int FibonacciI(int n){
-
-        
-    }
 }
