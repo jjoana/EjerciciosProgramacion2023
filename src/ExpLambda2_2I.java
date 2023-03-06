@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.function.Function;
 
 public class ExpLambda2_2I {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class ExpLambda2_2I {
             return calculand0;
 
         };
-        int resultado= operacion.CalculaFactorial(entrada);
+        int resultado = operacion.CalculaFactorial(entrada);
         System.out.println(resultado);
     }
 }
@@ -23,4 +24,5 @@ public class ExpLambda2_2I {
 @FunctionalInterface
 interface factorial {
     public int CalculaFactorial(int valor);
+
 }

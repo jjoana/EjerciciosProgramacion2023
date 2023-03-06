@@ -1,24 +1,23 @@
 import java.util.Scanner;
+import java.util.function.*;;
 
 public class ExpLambda2_1R {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduzca el valor");
-        int entrada = sc.nextInt();
+    Function<Integer, Integer> sumaNumeroLambda;
 
-        I_operacionR suma = (valor) -> {
-            int resultado = 0;
-            if (valor > 0) {
-                resultado += I_operacionR(valor - 1);
+    public ExpLambda2_1R(int valor) {
+        sumaNumeroLambda = (i) -> {
+            if (i > 0)
+                return i + sumaNumeroLambda.apply(i - 1);
+            {
             }
-            return resultado;
+            return i;
         };
-
+        System.out.println(sumaNumeroLambda.apply(valor));
     }
 
-    @FunctionalInterface
-    interface I_operacionR {
-        public int calculaOperacion(int valor);
+    public static void main(String[] args) {
+        new ExpLambda2_1R(6);
     }
+
 }
