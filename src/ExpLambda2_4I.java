@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ExpLambda2_4I {
+    
     public static void main(String[] args){
         ArrayList<Integer> lista = new ArrayList<Integer>();
         Scanner sc = new Scanner(System.in);
