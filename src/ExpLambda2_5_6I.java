@@ -27,9 +27,7 @@ public class ExpLambda2_5_6I {
 
         float resultado= operacion.calculaLista(lista);
         System.out.println(resultado);
-
     }
-
 }
 
 @FunctionalInterface 
