@@ -1,4 +1,4 @@
-public class CalculoNumeroPi {
+public class CalculoNumeroPiR {
     public static void main(String[] args) {
 
         ClaseAuxiliar objeto = new ClaseAuxiliar();

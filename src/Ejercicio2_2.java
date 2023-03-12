@@ -33,7 +33,7 @@ class Factorial {
         if(n>=21){
             throw (new ToLargeNumberException());
         }
-        
+
         long valor = 1;
         for (long i = n; i > 1; i--) {
             valor *= i;
@@ -60,9 +60,7 @@ class Factorial {
 }
 
 class NegativeNumberException extends Exception {
-
 }
-
 
 class ToLargeNumberException extends Exception{
 }
